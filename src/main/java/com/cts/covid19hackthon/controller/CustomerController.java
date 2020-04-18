@@ -18,13 +18,13 @@ public class CustomerController {
 	@Autowired
 	DBService dbService;
 	
-	@GetMapping("/all")
-	public List<Customer> getAll() {
+	@GetMapping("/customers")
+	public List<Customer> getCustomers() {
 		return dbService.getAll();
 	}
 	
-	@PostMapping("/add")
-	public void add(@RequestBody Customer cust) {
+	@PostMapping("/customers")
+	public void addCustomer(@RequestBody Customer cust) {
 		dbService.add(cust);
 		return ;
 	}

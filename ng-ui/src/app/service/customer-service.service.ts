@@ -16,11 +16,11 @@ export class CustomerService {
 
   public findAll():Observable<Customer[]>{
     console.log("In customer service");
-    return this.http.get<Customer[]>(this.customerUrl +"/all");
+    return this.http.get<Customer[]>(this.customerUrl +"/customers");
   }
 
   public save(cust: Customer){
-    return this.http.post<Customer>(this.customerUrl +"/add", cust);
+    return this.http.post<Customer>(this.customerUrl +"/customers", cust);
   }
 
 }
