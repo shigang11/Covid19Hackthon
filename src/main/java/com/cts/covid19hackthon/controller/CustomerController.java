@@ -20,12 +20,12 @@ public class CustomerController {
 	
 	@GetMapping("/customers")
 	public List<Customer> getCustomers() {
-		return dbService.getAll();
+		return dbService.getAllCustomers();
 	}
 	
 	@PostMapping("/customers")
 	public void addCustomer(@RequestBody Customer cust) {
-		dbService.add(cust);
+		dbService.addCustomer(cust);
 		return ;
 	}
 }

@@ -7,12 +7,16 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { FormsModule } from '@angular/forms';
 import { CustomerService } from './service/customer-service.service';
+import { TestCenterListComponent } from './test-center-list/test-center-list.component';
+import { TestCenterFormComponent } from './test-center-form/test-center-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerListComponent,
-    CustomerFormComponent
+    CustomerFormComponent,
+    TestCenterListComponent,
+    TestCenterFormComponent
   ],
   imports: [
     HttpClientModule,

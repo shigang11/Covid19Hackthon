@@ -1,0 +1,72 @@
+<div class="card my-5">
+  <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #customerForm="ngForm">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" [(ngModel)] = "testCenter.name"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter Name"
+              required #name="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="address1">Address1</label>
+              <input type="text" [(ngModel)] = "testCenter.address1"
+              class="form-control"
+              id="address1"
+              name="address1"
+              placeholder="Enter address1"
+              required #address1="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="address2">Address2</label>
+              <input type="text" [(ngModel)] = "testCenter.address2"
+              class="form-control"
+              id="address2"
+              name="address2"
+              placeholder="Enter Address2"
+              required #address2="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" [(ngModel)] = "testCenter.city"
+              class="form-control"
+              id="city"
+              name="city"
+              placeholder="Enter City"
+              required #city="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" [(ngModel)] = "testCenter.state"
+              class="form-control"
+              id="state"
+              name="state"
+              placeholder="Enter state"
+              required #state="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="zip">Zip</label>
+              <input type="text" [(ngModel)] = "testCenter.zip"
+              class="form-control"
+              id="zip"
+              name="zip"
+              placeholder="Enter zip"
+              required #zip="ngModel">
+          </div>
+          <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" [(ngModel)] = "testCenter.country"
+              class="form-control"
+              id="country"
+              name="country"
+              placeholder="Enter country"
+              required #country="ngModel">
+          </div>
+          <button type="submit"
+          class="btn btn-info">Submit</button>
+      </form>
+  </div>
+</div>
+

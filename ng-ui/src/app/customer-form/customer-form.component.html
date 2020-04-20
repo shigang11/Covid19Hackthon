@@ -10,7 +10,9 @@
                 placeholder="Enter first name"
                 required #firstName="ngModel">
             </div>
+            <!--
             <div [hidden]="!firstName.pristine" class="alert alert-danger">First name is required</div>
+            -->
             <div class="form-group">
                 <label for="lastName">Last Name</label>
                 <input type="text" [(ngModel)] = "customer.lastName"
@@ -20,7 +22,9 @@
                 placeholder="Enter last name"
                 required #lastName="ngModel">
             </div>
+            <!--
             <div [hidden]="!lastName.pristine" class="alert alert-danger">Last name is required</div>
+            -->
             <div class="form-group">
                 <label for="phone">Phone</label>
                 <input type="text" [(ngModel)] = "customer.phone"
@@ -30,8 +34,9 @@
                 placeholder="Enter phone"
                 required #phone="ngModel">
             </div>
+            <!--
             <div [hidden]="!phone.pristine" class="alert alert-danger">phone is required</div>
-
+            -->
             <button type="submit" [disabled]="!customerForm.form.valid"
             class="btn btn-info">Submit</button>
         </form>
