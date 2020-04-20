@@ -20,7 +20,7 @@ export class TestCenterFormComponent implements OnInit {
 
   onSubmit(){
     this.testCenterService.add(this.testCenter).subscribe(result =>{
-      this.router.navigate(['/testCenters']);
+      this.router.navigate(['testcenters']);
     })
   }
 

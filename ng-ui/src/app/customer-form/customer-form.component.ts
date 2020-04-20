@@ -11,18 +11,20 @@ import {Customer} from '../model/customer';
 export class CustomerFormComponent implements OnInit {
   customer: Customer;
 
-  constructor(private route: ActivatedRoute, private router: Router, 
+  constructor(private route: ActivatedRoute, private router: Router,
     private customerService: CustomerService) {
 
-      this.customer = new Customer();    
+      this.customer = new Customer();
   }
 
   onSubmit(){
-    this.customerService.save(this.customer).subscribe(result =>this.gotoCustomerList);
+    this.customerService.save(this.customer).subscribe(result =>{
+        this.router.navigate(['customers']);
+    });
   }
 
   gotoCustomerList(){
-    this.router.navigate(['/customers']);
+    this.router.navigate(['customers']);
   }
 
   ngOnInit(): void {}
